@@ -1,0 +1,11 @@
+dorkbot:
+  image: miketheman/dorkbot:latest
+  links:
+    - brain
+  environment:
+    - LITA_SLACK_TOKEN
+    - LITA_ROBOT_ADMINS
+brain:
+  image: redis:latest
+  volumes:
+    - /data

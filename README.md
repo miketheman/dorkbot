@@ -30,11 +30,26 @@ the root directory.
 Assists with running the lita container without requiring a full rebuild while
 working on configs or custom extensions. See `.dockerignore` for exclusions.
 
-The `brain` container persists to the Docker host in `/opt/dorkbot/data`.
+The `brain` container persists to the Docker host.
 
 ## Deployment
 
-TBD
+Uses [Tutum](https://www.tutum.co/) to deploy a container stack on a node.
+See `tutum.yml` for details.
+
+Post-deploy, a Trigger hook is manually set on the `dorkbot` service to redeploy
+on a successful build from the [Docker Registry](https://registry.hub.docker.com/u/miketheman/dorkbot/builds_history/205292/).
+
+The Registry will build the container with the new code, and trigger a WebHook
+to Tutum to redeploy the running container.
+
+## Other
+
+- Download last-saved redis data
+
+      tutum service run -n downloader -p 2222:22 -e AUTHORIZED_KEYS="$(cat ~/.ssh/id_rsa.pub)" --volumes-from brain tutum/ubuntu
+      scp -r -P 2222 root@downloader-1.miketheman.cont.tutum.io:/data .
+
 
 ## License
 

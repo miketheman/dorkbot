@@ -1,6 +1,8 @@
 .dockerignore
+.env
 .envrc
 .git
 .gitignore
 docker-compose.yml
+tutum.yml
 README.md
