@@ -44,6 +44,8 @@ GEM
       lita (~> 4.0)
     lita-ping (1.1.0)
       lita (>= 2.0)
+    lita-pugbomb (1.0.2)
+      lita (>= 2.0)
     lita-shipit (0.0.1)
       lita (>= 4.0)
     lita-slack (1.4.0)
@@ -83,5 +85,6 @@ DEPENDENCIES
   lita-karma
   lita-likeaboss
   lita-ping
+  lita-pugbomb
   lita-shipit
   lita-slack

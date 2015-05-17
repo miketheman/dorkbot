@@ -4,7 +4,7 @@ Lita.configure do |config|
 
   # The name your robot will use.
   config.robot.name = 'dorkbot'
-  config.robot.alias = 'd'
+  config.robot.alias = 'dork'
 
   # The locale code for the language to use.
   config.robot.locale = :en
