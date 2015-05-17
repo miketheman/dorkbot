@@ -10,7 +10,6 @@ lita:
     - LITA_LOG_LEVEL=debug
   ports:
     - '8080:8080'
-  command: lita start
 
 brain:
   image: redis:latest

@@ -5,3 +5,5 @@ ADD . /code
 WORKDIR /code
 
 RUN gem install bundler --no-rdoc --no-ri && bundle install
+
+ENTRYPOINT ["bundle", "exec", "lita", "start"]
