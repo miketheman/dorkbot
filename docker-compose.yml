@@ -1,0 +1,18 @@
+lita:
+  volumes:
+    - .:/code
+  build: .
+  links:
+    - brain
+  env_file:
+    - ./.envrc
+  environment:
+    - LITA_LOG_LEVEL=debug
+  ports:
+    - '8080:8080'
+  command: lita start
+
+brain:
+  image: redis:latest
+  volumes:
+    - /opt/dorkbot/data:/data
