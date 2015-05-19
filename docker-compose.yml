@@ -5,7 +5,7 @@ lita:
   links:
     - brain
   env_file:
-    - ./.envrc
+    - ./.env
   environment:
     - LITA_LOG_LEVEL=debug
   ports:
