@@ -14,7 +14,7 @@ Create an `.env` file with override environment variables, like:
 Uses [`docker-compose`](https://docs.docker.com/compose/) with VirtualBox:
 
     docker-compose build
-    docker-compose run --rm lita lita start
+    docker-compose run --rm lita
 
     # Cleanup
     docker-compose stop
