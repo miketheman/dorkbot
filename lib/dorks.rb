@@ -4,7 +4,7 @@ module Lita
     # And it's for our beloved Dorks!
     class Dorks < Handler
       # Inline response callback
-      route(/foo/) do |response|
+      route(/\bfoo\b/) do |response|
         response.reply 'bar'
       end
 
