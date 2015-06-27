@@ -50,7 +50,7 @@ to Tutum to redeploy the running container.
       tutum service run -n downloader -p 2222:22 -e AUTHORIZED_KEYS="$(cat ~/.ssh/id_rsa.pub)" --volumes-from brain tutum/ubuntu
       scp -r -P 2222 root@downloader-1.miketheman.cont.tutum.io:/data .
 
-- Run bot in interactive bash shell and override an environment variable:x:
+- Run bot in interactive bash shell and override an environment variable:
 
       docker-compose run --rm --entrypoint /bin/bash -e LITA_ADAPTER=shell lita
 
