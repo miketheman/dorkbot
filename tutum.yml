@@ -5,6 +5,7 @@ dorkbot:
   environment:
     - LITA_SLACK_TOKEN
     - LITA_ROBOT_ADMINS
+  restart: on-failure
 brain:
   image: redis:latest
   volumes:
