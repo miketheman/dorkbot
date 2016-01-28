@@ -11,6 +11,8 @@ Create an `.env` file with override environment variables, like:
     LITA_SLACK_TOKEN=abcdefghijklmnop
     LITA_ADAPTER=shell # to use the local shell adapter instead of Slack
 
+See `lita_config.rb` for any more variables you can set.
+
 Uses [`docker-compose`](https://docs.docker.com/compose/) with VirtualBox:
 
     docker-compose build

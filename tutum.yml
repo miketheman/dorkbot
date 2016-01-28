@@ -5,6 +5,8 @@ dorkbot:
   environment:
     - LITA_SLACK_TOKEN
     - LITA_ROBOT_ADMINS
+    - LITA_GOOGLE_CSE_ID
+    - LITA_GOOGLE_CSE_KEY
   restart: on-failure
 brain:
   image: redis:latest

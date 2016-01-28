@@ -21,4 +21,9 @@ Lita.configure do |config|
   config.robot.adapter        = ENV['LITA_ADAPTER'] || :slack
   config.adapters.slack.token = ENV['LITA_SLACK_TOKEN'] || ''
   config.robot.admins         = ENV['LITA_ROBOT_ADMINS'].split(',')
+
+  # Google Images Search
+  config.handlers.google_images.google_cse_id = ENV['LITA_GOOGLE_CSE_ID'] || ''
+  config.handlers.google_images.google_cse_key = ENV['LITA_GOOGLE_CSE_KEY'] || ''
+  config.handlers.google_images.safe_search = :off
 end
