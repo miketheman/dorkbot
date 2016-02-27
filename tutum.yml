@@ -5,6 +5,7 @@ dorkbot:
   environment:
     - LITA_SLACK_TOKEN
     - LITA_ROBOT_ADMINS
+    - LITA_GIPHY_API_KEY
     - LITA_GOOGLE_CSE_ID
     - LITA_GOOGLE_CSE_KEY
   restart: on-failure

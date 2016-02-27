@@ -11,9 +11,9 @@ gem 'lita-github-status'
 gem 'lita-group-mention'
 
 # Fun
-gem 'lita-animate'
 gem 'lita-applause'
 gem 'lita-dogebomb'
+gem 'lita-giphy'
 gem 'lita-goforit'
 gem 'lita-google-images'
 gem 'lita-karma'
