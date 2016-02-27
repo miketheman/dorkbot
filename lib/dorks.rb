@@ -18,6 +18,20 @@ module Lita
       route(/crazy/, command: true) do |response|
         response.reply "You think I'M crazy? YOU'RE CRAZY!"
       end
+
+      # Protect those who cannot protect themselves
+      route(/snarkbot.*(shut|stfu)/, :protect)
+
+      def protect(response)
+        responses = [
+          "Hey, lay off. He's not that smart.",
+          "Go pick on someone your own size.",
+          "You caught him off guard.",
+          "He's a diamond in the rough.",
+        ]
+        sleep 1
+        response.reply responses.sample
+      end
     end
 
     Lita.register_handler(Dorks)
