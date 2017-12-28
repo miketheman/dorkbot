@@ -36,8 +36,6 @@ GEM
       lita (>= 4.3)
     lita-goforit (0.1.0)
       lita (>= 4.3)
-    lita-google-images (3.1.0)
-      lita (>= 4.0)
     lita-group-mention (1.2.0)
       lita (>= 4.2)
     lita-karma (3.0.2)
@@ -81,7 +79,6 @@ DEPENDENCIES
   lita-giphy
   lita-github-status
   lita-goforit
-  lita-google-images
   lita-group-mention
   lita-karma
   lita-likeaboss

@@ -27,9 +27,4 @@ Lita.configure do |config|
 
   # Giphy Animation
   config.handlers.giphy.api_key = ENV['LITA_GIPHY_API_KEY'] || ''
-
-  # Google Images Search
-  config.handlers.google_images.google_cse_id = ENV['LITA_GOOGLE_CSE_ID'] || ''
-  config.handlers.google_images.google_cse_key = ENV['LITA_GOOGLE_CSE_KEY'] || ''
-  config.handlers.google_images.safe_search = :off
 end
