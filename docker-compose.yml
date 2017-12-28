@@ -10,6 +10,7 @@ lita:
     - LITA_LOG_LEVEL=debug
     # @see https://github.com/giphy/GiphyAPI#public-beta-key
     - LITA_GIPHY_API_KEY=dc6zaTOxFJmzC
+    - REDIS_URL=redis://brain:6379
   ports:
     - '8080:8080'
 

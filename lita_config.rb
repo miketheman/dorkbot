@@ -14,8 +14,11 @@ Lita.configure do |config|
   # Messages at the selected level and above will be logged.
   config.robot.log_level = ENV['LITA_LOG_LEVEL'] || :info
 
+  # HTTP Port
+  config.http.port = ENV['PORT'] || ''
+
   # Redis Brain
-  config.redis = { host: 'brain', port: 6379 }
+  config.redis[:url] = ENV['REDIS_URL']
 
   # Adapter setup
   config.robot.adapter        = ENV['LITA_ADAPTER'] || :slack
