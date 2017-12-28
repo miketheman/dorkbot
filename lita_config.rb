@@ -23,7 +23,7 @@ Lita.configure do |config|
   # Adapter setup
   config.robot.adapter        = ENV['LITA_ADAPTER'] || :slack
   config.adapters.slack.token = ENV['LITA_SLACK_TOKEN'] || ''
-  config.robot.admins         = ENV['LITA_ROBOT_ADMINS'].split(',')
+  config.robot.admins         = ENV['LITA_ROBOT_ADMINS'].split(',') || ''
 
   # Giphy Animation
   config.handlers.giphy.api_key = ENV['LITA_GIPHY_API_KEY'] || ''
