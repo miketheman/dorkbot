@@ -38,6 +38,8 @@ GEM
       lita (>= 4.3)
     lita-group-mention (1.2.0)
       lita (>= 4.2)
+    lita-heroku-keepalive (0.2.1)
+      lita (>= 4.7)
     lita-karma (3.0.2)
       lita (>= 4.0)
     lita-likeaboss (1.1.0)
@@ -80,6 +82,7 @@ DEPENDENCIES
   lita-github-status
   lita-goforit
   lita-group-mention
+  lita-heroku-keepalive
   lita-karma
   lita-likeaboss
   lita-ping

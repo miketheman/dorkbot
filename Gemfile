@@ -7,6 +7,7 @@ gem 'lita'
 # Core
 gem 'lita-slack'
 gem 'lita-ping'
+gem 'lita-heroku-keepalive'
 
 # Work
 gem 'lita-github-status'
