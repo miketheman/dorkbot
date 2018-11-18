@@ -59,7 +59,7 @@ GEM
     multi_json (1.12.2)
     multipart-post (2.0.0)
     puma (3.11.0)
-    rack (1.6.8)
+    rack (1.6.11)
     rb-readline (0.5.5)
     redis (4.0.1)
     redis-namespace (1.6.0)
@@ -91,7 +91,7 @@ DEPENDENCIES
   lita-slack
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.1
+   1.16.6
