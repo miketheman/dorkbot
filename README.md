@@ -36,21 +36,14 @@ The `brain` container persists to the Docker host.
 
 ## Deployment
 
-Uses [Tutum](https://www.tutum.co/) to deploy a container stack on a node.
-See `tutum.yml` for details.
+The project deploys to Heroku automatically on merges to `master` branch.
+This has some caveats - such as using the heroku Redis store has no persistence,
+and that I've used the Heroku scheduler to keep the bot online during "business hours".
 
-Post-deploy, a Trigger hook is manually set on the `dorkbot` service to redeploy
-on a successful build from the [Docker Registry](https://registry.hub.docker.com/u/miketheman/dorkbot/builds_history/205292/).
-
-The Registry will build the container with the new code, and trigger a WebHook
-to Tutum to redeploy the running container.
+A future change will be to migrate the project to an always-on service with a persistent
+data layer.
 
 ## Other
-
-- Download last-saved redis data
-
-      tutum service run -n downloader -p 2222:22 -e AUTHORIZED_KEYS="$(cat ~/.ssh/id_rsa.pub)" --volumes-from brain tutum/ubuntu
-      scp -r -P 2222 root@downloader-1.miketheman.cont.tutum.io:/data .
 
 - Run bot in interactive bash shell and override an environment variable:
 
