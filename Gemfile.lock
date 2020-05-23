@@ -59,7 +59,7 @@ GEM
     multi_json (1.14.1)
     multipart-post (2.1.1)
     nio4r (2.5.2)
-    puma (4.3.3)
+    puma (4.3.5)
       nio4r (~> 2.0)
     rack (1.6.13)
     rb-readline (0.5.5)
@@ -69,7 +69,7 @@ GEM
     thor (1.0.1)
     url_mount (0.2.1)
       rack
-    websocket-driver (0.7.1)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
 
