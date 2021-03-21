@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.7.1'
+ruby '3.0.0'
 
 gem 'lita', '>= 4.8.0'
 
 # Core
-gem 'lita-slack', '>= 1.8.0'
-gem 'lita-ping', '>= 1.1.2'
 gem 'lita-heroku-keepalive', '>= 0.2.1'
+gem 'lita-ping', '>= 1.1.2'
+gem 'lita-slack', '>= 1.8.0'
 
 # Work
 gem 'lita-github-status', '>= 0.1.0'
